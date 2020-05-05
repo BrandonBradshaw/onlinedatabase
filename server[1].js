@@ -80,7 +80,7 @@ const initServer = () => {
 		events = JSON.parse(data).events;
 	});
   server = http.createServer(handleRequest);
-  server.listen(port, "10.12.66.1");
+  server.listen(port, "174.86.226.55");
   listener = io.listen(server);
   listener.sockets.on("connection", (socket) => {
     socket.on("addEvent", (evt) => {
@@ -150,7 +150,7 @@ const initServer = () => {
 			});
 		});
   });
-  console.log("Server active at " + "10.12.66.1" + ":" + port);
+  console.log("Server active at " + "174.86.226.55" + ":" + port);
 }
 
 initServer();
